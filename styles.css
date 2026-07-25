@@ -26,11 +26,56 @@ body {
     flex: auto;
     width: 30vw;
     height: 53vw;
-    outline: solid;
 }
 
 .headerText {
     font-size: x-large;
     font-weight: 700;
-    
+    display: flex;
 }
+
+.formContainer {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+#submitButton {
+    position: absolute;
+    inset-inline-start: 650px;
+    inset-block-start: 700px;
+    height: 40px;
+    width: 200px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+ipnut:invalid {
+    border-color: red;
+}
+
+input, label {
+    display: block;
+    gap: 10px;
+}
+
+.formDiv {
+    border: solid;
+    width: 400px;
+    height: 350px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+}
+
